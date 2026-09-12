@@ -1,0 +1,38 @@
+# CollegeDuniaEtl-specific ignore rules
+
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Python cache and tooling
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Runtime logs and temp files
+logs/
+*.log
+*.tmp
+
+# ETL generated artifacts
+scraped_data/
+audit_outputs/
+final_exam_section/
+mongo_backup_*/
+failed_urls.txt
+failed_urls_resume.txt
+
+# Local editor/tooling
+.codex/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
